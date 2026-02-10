@@ -11,7 +11,7 @@ services:
     secrets:
       - mysql_password
     volumes:
-      - ./mysql/localhost_seed.sql:/docker-entrypoint-initdb.d/localhost.sql
+      - ./mysql/localhost.sql:/docker-entrypoint-initdb.d/localhost.sql
       - ./mysql/port_drayage.sql:/docker-entrypoint-initdb.d/port_drayage.sql
       - /etc/localtime:/etc/localtime:ro 
       - /etc/timezone:/etc/timezone:ro 
