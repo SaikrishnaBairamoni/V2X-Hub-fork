@@ -95,8 +95,7 @@ services:
     secrets:
       - mysql_password
     volumes:
-    #  - v2xhub-logs-volume:/var/log/tmx:rw
-      - ./logs:/var/log/tmx:rw
+      - v2xhub-logs-volume:/var/log/tmx:rw
       - v2xhub-download-volume:/var/www/download/:rw
       - /etc/localtime:/etc/localtime:ro 
       - /etc/timezone:/etc/timezone:ro 
