@@ -101,6 +101,7 @@ services:
       - /etc/timezone:/etc/timezone:ro 
       - ssl-certs-volume:/var/www/plugins/ssl:rw
       - ./tests/MAP:/var/www/download/MAP:ro
+      - ./tests/TIM:/var/www/download/TIM:ro
 
     healthcheck:
       test: ["CMD-SHELL", "ps -ef | grep -v grep | grep -q tmx || exit 1"]
